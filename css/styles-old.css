@@ -700,8 +700,7 @@
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
-    
+    color: rgba(46, 47, 66, 0.4); 
 }
 .div-checkbox {
    margin-bottom: 24px;
