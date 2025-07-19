@@ -170,6 +170,7 @@ display: none;
             color: #434455;
             text-decoration: none;
             cursor: pointer;
+            font-style: normal;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 }
@@ -345,11 +346,11 @@ display: none;
 }
 
 .onesection {
-    padding: 72px 0;
+    padding-bottom: 72px;
+    padding-top: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/Dark-bgmb1x.jpg);
     background-size: cover;
-    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -376,7 +377,6 @@ display: none;
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
-
 }
 
 .onesection-button {
@@ -390,13 +390,12 @@ display: none;
     margin-left: 59px;
     display: block;
     border: none;
-    margin-top: 48px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     @media screen and (min-width: 768px) {
       .onesection {
-        height: 436px;
-        padding: 0;
+        padding-bottom: 112px;
+        padding-top: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/Dark-bgpl1x.jpg);
     }
@@ -405,24 +404,25 @@ display: none;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) url(../images/Dark-bgpl2x.jpg);
             }
         }
-    .onesection-title {
+       .onesection-title {
         font-size: 56px;
         line-height: 1.07;
         margin: 0 120px;
-        padding-top: 112px;
         padding-bottom: 36px;
     }
 
-    .onesection-button {
-        margin: 0 284px 112px 284px;
+        .onesection-button {
+        margin: 0 284px;
     }
 }
 
 @media screen and (min-width: 1158px) {
-    .onesection {
+       .onesection {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/people-office1х.jpg);
             max-width: 1440px;
+            padding-bottom: 188px;
+            padding-top: 188px;
         }
     @media (min-resolution: 192dpi) {
         .onesection {
@@ -433,7 +433,6 @@ display: none;
         .onesection-title {
             box-sizing: border-box;
             max-width: 496px;
-            padding-top: 188px;
             padding-bottom: 48px;
             margin: 0 auto;
         }
@@ -519,7 +518,8 @@ display: none;
     .twosection-ull {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        row-gap: 64px;
+        column-gap: 24px;
     }
 
     .twosection-lii {
@@ -645,7 +645,8 @@ display: none;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            gap: 24px;
+            row-gap: 64px;
+            column-gap: 24px;
         }
 }
 @media screen and (min-width: 1158px) {
@@ -730,7 +731,8 @@ display: none;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 24px;
+            row-gap: 72px;
+            column-gap: 24px;
         }
         .foursection-lii {
             width: 356px;
